@@ -97,7 +97,7 @@ class ACTConfig(PreTrainedConfig):
 
     # 动作预测块大小：每次预测的环境步骤数量
     # 较大的块大小允许模型预测更长序列的动作，提高长期规划能力
-    chunk_size: int = 100
+    chunk_size: int = 50
 
     # 执行动作步数：每次策略调用在环境中执行的动作步数
     # 不应大于chunk_size，例如可以预测100步但只执行其中的50步
